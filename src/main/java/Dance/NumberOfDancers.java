@@ -1,8 +1,8 @@
 package Dance;
 
 /**
- * Created by alex
  * enum of the type of number of dancers
+ * @author  Alex
  */
 public enum NumberOfDancers {
     massive,

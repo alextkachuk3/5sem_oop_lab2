@@ -1,2 +1,10 @@
 # Project exclude paths
 /.gradle/
+build/tmp/compileJava/previous-compilation-data.bin
+build/classes/java/main/Dance/Dance.class
+build/classes/java/main/Dance/DanceNumber.class
+build/classes/java/main/Dance/Dancers.class
+build/classes/java/main/Dance/Music.class
+build/classes/java/main/Dance/NumberOfDancers.class
+build/classes/java/main/Dance/Scene.class
+build/classes/java/main/Main.class

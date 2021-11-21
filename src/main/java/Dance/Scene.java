@@ -1,8 +1,8 @@
 package Dance;
 
 /**
- * Created by Alex
  * enum of the scene types
+ * @author  Alex
  */
 public enum Scene {
     assemblyHall,

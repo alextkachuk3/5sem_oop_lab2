@@ -1,10 +1,10 @@
 package Dance;
 
 /**
- * Created by Alex
- * enum of dance types
+ * enum of the dance types
+ * @author  Alex
  */
-public enum Dance {
+public enum Type {
     ballroom,
     folk,
     variety,
