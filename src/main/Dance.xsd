@@ -3,55 +3,56 @@
     <xs:element name="Dance">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Dance-number" type="dance-number" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element name="danceNumber" type="danceNumber" maxOccurs="unbounded" minOccurs="0"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:complexType name="dance-number">
+    <xs:complexType name="danceNumber">
         <xs:sequence>
-            <xs:element name="Type" type="DanceType"/>
-            <xs:element name="Scene" type="SceneType"/>
-            <xs:element name="Number-of-dancers" type="NumberOfDancerType"/>
-            <xs:element name="Music" type="MusicType"/>
-            <xs:element name="Dancers" type="DancersType"/>
-            <xs:element name="Number" type="xs:positiveInteger"/>
+            <xs:element name="type" type="danceType"/>
+            <xs:element name="scene" type="sceneType"/>
+            <xs:element name="numberOfDancers" type="numberOfDancersType"/>
+            <xs:element name="music" type="musicType"/>
+            <xs:element name="dancers" type="dancersType"/>
+            <xs:element name="number" type="xs:positiveInteger"/>
         </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
     </xs:complexType>
 
-    <xs:simpleType name="DanceType">
+    <xs:simpleType name="danceType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="Ballroom"/>
-            <xs:enumeration value="Folk"/>
-            <xs:enumeration value="Variety"/>
-            <xs:enumeration value="Oriental"/>
+            <xs:enumeration value="ballroom"/>
+            <xs:enumeration value="folk"/>
+            <xs:enumeration value="variety"/>
+            <xs:enumeration value="oriental"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="SceneType">
+    <xs:simpleType name="sceneType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="Assembly hall"/>
-            <xs:enumeration value="Street platform"/>
-            <xs:enumeration value="TV studio"/>
+            <xs:enumeration value="assemblyHall"/>
+            <xs:enumeration value="streetPlatform"/>
+            <xs:enumeration value="TVStudio"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="NumberOfDancerType">
+    <xs:simpleType name="numberOfDancersType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="Massive"/>
-            <xs:enumeration value="Solo"/>
-            <xs:enumeration value="Pair"/>
+            <xs:enumeration value="massive"/>
+            <xs:enumeration value="solo"/>
+            <xs:enumeration value="pair"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="MusicType">
+    <xs:simpleType name="musicType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Phonogram"/>
             <xs:enumeration value="Live"/>
         </xs:restriction>
     </xs:simpleType>
     
-    <xs:complexType name="DancersType">
+    <xs:complexType name="dancersType">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
             <xs:element name="age" type="xs:positiveInteger"/>
