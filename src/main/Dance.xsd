@@ -1,0 +1,62 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Dance">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Dance-number" type="dance-number" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="dance-number">
+        <xs:sequence>
+            <xs:element name="Type" type="DanceType"/>
+            <xs:element name="Scene" type="SceneType"/>
+            <xs:element name="Number-of-dancers" type="NumberOfDancerType"/>
+            <xs:element name="Music" type="MusicType"/>
+            <xs:element name="Dancers" type="DancersType"/>
+            <xs:element name="Number" type="xs:positiveInteger"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="DanceType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Ballroom"/>
+            <xs:enumeration value="Folk"/>
+            <xs:enumeration value="Variety"/>
+            <xs:enumeration value="Oriental"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="SceneType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Assembly hall"/>
+            <xs:enumeration value="Street platform"/>
+            <xs:enumeration value="TV studio"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="NumberOfDancerType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Massive"/>
+            <xs:enumeration value="Solo"/>
+            <xs:enumeration value="Pair"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="MusicType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Phonogram"/>
+            <xs:enumeration value="Live"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="DancersType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="age" type="xs:positiveInteger"/>
+            <xs:element name="origin" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

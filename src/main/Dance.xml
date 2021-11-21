@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dance xsi:noNamespaceSchemaLocation="Dance.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Dance-number>
+        <Type>Folk</Type>
+        <Scene>Assembly hall</Scene>
+        <Number-of-dancers>Solo</Number-of-dancers>
+        <Music>Live</Music>
+        <Dancers>
+            <name>string</name>
+            <age>8</age>
+            <origin>Ukraine</origin>
+        </Dancers>
+        <Number>12</Number>
+    </Dance-number>
+    <Dance-number>
+        <Type>Ballroom</Type>
+        <Scene>Street platform</Scene>
+        <Number-of-dancers>Solo</Number-of-dancers>
+        <Music>Phonogram</Music>
+        <Dancers>
+            <name>string</name>
+            <age>19</age>
+            <origin>USA</origin>
+        </Dancers>
+        <Number>14</Number>
+    </Dance-number>
+</Dance>
