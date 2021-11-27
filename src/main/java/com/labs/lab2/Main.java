@@ -1,3 +1,5 @@
+package com.labs.lab2;
+
 /**
  * @author  Alex
  */

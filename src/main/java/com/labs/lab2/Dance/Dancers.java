@@ -1,4 +1,4 @@
-package Dance;
+package com.labs.lab2.Dance;
 
 /**
  * Dancers params class
