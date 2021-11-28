@@ -13,10 +13,6 @@ public class Dance implements Comparable<Dance> {
     private Dancers dancers;
     private int number;
 
-    public Dance() {
-
-    }
-
     public Dance(String _id, Type _type, Scene _scene,
                  NumberOfDancers _numberOfDancers, Music _music,
                  Dancers _dancers, int _number) {
@@ -95,5 +91,18 @@ public class Dance implements Comparable<Dance> {
     @Override
     public int compareTo(Dance o) {
         return id.compareTo(o.id);
+    }
+
+    @Override
+    public String toString() {
+        return "Stone{" +
+                "id=" + id +
+                ", type=" + type +
+                ", scene=" + scene +
+                ", numberOfDancers=" + numberOfDancers +
+                ", music=" + music +
+                ", dancers=" + dancers +
+                ", number=" + number +
+                '}';
     }
 }
