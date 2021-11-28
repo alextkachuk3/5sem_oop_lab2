@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * XML schema validation
+ * XML schema validation handle
+ * @author Alex
  */
 public class DanceHandler extends DefaultHandler {
     private List<String> errors = new ArrayList<>();

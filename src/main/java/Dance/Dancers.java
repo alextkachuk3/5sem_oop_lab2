@@ -32,4 +32,13 @@ public class Dancers {
     public void setOrigin(String _origin) {
         origin = _origin;
     }
+
+    @Override
+    public String toString() {
+        return "Dancers{" +
+                ", name=" + name +
+                ", age=" + age +
+                ", origin='" + origin + '\'' +
+                '}';
+    }
 }
