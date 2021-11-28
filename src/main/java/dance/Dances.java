@@ -1,4 +1,4 @@
-package com.labs.lab2.Dance;
+package com.labs.lab2.dance;
 
 import java.util.ArrayList;
 import java.util.Collections;

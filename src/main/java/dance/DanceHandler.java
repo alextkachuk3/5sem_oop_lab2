@@ -1,4 +1,4 @@
-package com.labs.lab2.Dance;
+package com.labs.lab2.dance;
 
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;

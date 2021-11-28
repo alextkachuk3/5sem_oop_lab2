@@ -1,4 +1,4 @@
-package com.labs.lab2.Dance;
+package com.labs.lab2.dance;
 
 /**
  * Class of single XML Dance object

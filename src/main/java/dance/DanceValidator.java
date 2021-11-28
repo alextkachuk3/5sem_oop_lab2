@@ -1,4 +1,4 @@
-package com.labs.lab2.Dance;
+package com.labs.lab2.dance;
 
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -14,7 +14,7 @@ import java.io.IOException;
 public class DanceValidator {
     private final DefaultHandler handler;
     private final SAXParser parser;
-    
+
     /**
      * @param schemaPath - path to xsd file
      * @param _handler - errors handler
