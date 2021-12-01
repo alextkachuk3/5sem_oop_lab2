@@ -36,7 +36,7 @@ public class Dancers {
     @Override
     public String toString() {
         return "Dancers{" +
-                ", name=" + name +
+                "name=" + name +
                 ", age=" + age +
                 ", origin='" + origin + '\'' +
                 '}';

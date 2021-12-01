@@ -6,14 +6,21 @@ package com.labs.lab2.dance;
  */
 public class DanceNumber implements Comparable<DanceNumber> {
     private String id;
-    private Type type;
-    private Scene scene;
-    private NumberOfDancers numberOfDancers;
-    private Music music;
+    private String type;
+    private String scene;
+    private String numberOfDancers;
+    private String music;
     private Dancers dancers;
     private int number;
 
+
     /**
+     * Default DanceNumber constructor
+     */
+    public DanceNumber() {}
+
+    /**
+     * Parametrized DanceNumber constructor
      * @param _id Dance number id
      * @param _type Dance number type(genre)
      * @param _scene Dance number scene type
@@ -22,8 +29,8 @@ public class DanceNumber implements Comparable<DanceNumber> {
      * @param _dancers Dance number dancers info
      * @param _number Number of dance number in the program
      */
-    DanceNumber(String _id, Type _type, Scene _scene, NumberOfDancers _numberOfDancers,
-                Music _music, Dancers _dancers, int _number) {
+    public DanceNumber(String _id, String _type, String _scene, String _numberOfDancers,
+                String _music, Dancers _dancers, int _number) {
         id = _id;
         type = _type;
         scene = _scene;
@@ -41,35 +48,35 @@ public class DanceNumber implements Comparable<DanceNumber> {
         id = _id;
     }
 
-    public Type getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Type _type) {
+    public void setType(String _type) {
         type = _type;
     }
 
-    public Scene getScene() {
+    public String getScene() {
         return scene;
     }
 
-    public void setScene(Scene _scene) {
+    public void setScene(String _scene) {
         scene = _scene;
     }
 
-    public NumberOfDancers getNumberOfDancers() {
+    public String getNumberOfDancers() {
         return numberOfDancers;
     }
 
-    public void setNumberOfDancers(NumberOfDancers _numberOfDancers) {
+    public void setNumberOfDancers(String _numberOfDancers) {
         numberOfDancers = _numberOfDancers;
     }
 
-    public Music getMusic() {
+    public String getMusic() {
         return music;
     }
 
-    public void setMusic(Music _music) {
+    public void setMusic(String _music) {
         music = _music;
     }
 

@@ -10,10 +10,18 @@ import java.util.Objects;
  * @author Alex
  */
 public class Dances {
-    private List<Dance> dances = new ArrayList<>();
+    private List<DanceNumber> dances = new ArrayList<>();
 
-    public boolean add(Dance dance) {
-        return dances.add(dance);
+    public List<DanceNumber> getDances() {
+        return dances;
+    }
+
+    public void setDances(List<DanceNumber> _dances) {
+        dances = _dances;
+    }
+
+    public boolean add(DanceNumber danceNumber) {
+        return dances.add(danceNumber);
     }
 
     public boolean remove(String id) {
