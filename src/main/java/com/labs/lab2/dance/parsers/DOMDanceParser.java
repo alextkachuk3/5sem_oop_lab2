@@ -52,7 +52,7 @@ public class DOMDanceParser extends DanceParser {
     }
 
     private Element createDanceNumberElement(DanceNumber danceNumber, Document document){
-        var danceElement = document.createElement(DanceXmlTags.DANCE_NUMBER.getValue());
+        var danceElement = document.createElement(DanceXmlTags.DANCENUMBER.getValue());
         //attributes
         danceElement.setAttribute(DanceXmlTags.ID.getValue(), danceNumber.getId());
         //type
@@ -64,7 +64,7 @@ public class DOMDanceParser extends DanceParser {
         sceneElement.appendChild(document.createTextNode(danceNumber.getScene()));
         danceElement.appendChild(sceneElement);
         //numberOfDancers
-        var numberOfDancersElement = document.createElement(DanceXmlTags.NUMBER_OF_DANCERS.getValue());
+        var numberOfDancersElement = document.createElement(DanceXmlTags.NUMBEROFDANCERS.getValue());
         numberOfDancersElement.appendChild(document.createTextNode(danceNumber.getNumberOfDancers()));
         danceElement.appendChild(numberOfDancersElement);
         //music
@@ -108,7 +108,7 @@ public class DOMDanceParser extends DanceParser {
                 Dances dances = new Dances();
                 Document doc = docBuilder.parse(filePath);
                 Element root = doc.getDocumentElement();
-                NodeList dancesList = root.getElementsByTagName(DanceXmlTags.DANCE_NUMBER.getValue());
+                NodeList dancesList = root.getElementsByTagName(DanceXmlTags.DANCENUMBER.getValue());
                 for (int i = 0; i < dancesList.getLength(); i++) {
                     Element danceElement = (Element) dancesList.item(i);
                     DanceNumber danceNumber = buildDanceNumber(danceElement);
@@ -130,7 +130,7 @@ public class DOMDanceParser extends DanceParser {
         //scene
         danceNumber.setScene(getElementTextContent(danceNumberElement, DanceXmlTags.SCENE.getValue()));
         //numberOfDancers
-        danceNumber.setNumberOfDancers(getElementTextContent(danceNumberElement, DanceXmlTags.NUMBER_OF_DANCERS.getValue()));
+        danceNumber.setNumberOfDancers(getElementTextContent(danceNumberElement, DanceXmlTags.NUMBEROFDANCERS.getValue()));
         //music
         danceNumber.setMusic(getElementTextContent(danceNumberElement, DanceXmlTags.MUSIC.getValue()));
         //dancers

@@ -2,11 +2,11 @@ package com.labs.lab2.dance;
 
 public enum DanceXmlTags {
     DANCE("Dance"),
-    DANCE_NUMBER("danceNumber"),
+    DANCENUMBER("danceNumber"),
     ID("id"),
     TYPE("type"),
     SCENE("scene"),
-    NUMBER_OF_DANCERS("numberOfDancers"),
+    NUMBEROFDANCERS("numberOfDancers"),
     MUSIC("music"),
     NAME("name"),
     AGE("age"),
