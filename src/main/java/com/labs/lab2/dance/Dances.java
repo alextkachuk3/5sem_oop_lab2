@@ -12,6 +12,12 @@ import java.util.Objects;
 public class Dances {
     private List<DanceNumber> dances = new ArrayList<>();
 
+    public Dances() {}
+
+    public Dances(List<DanceNumber> danceNumbers) {
+        dances = danceNumbers;
+    }
+
     public List<DanceNumber> getDances() {
         return dances;
     }

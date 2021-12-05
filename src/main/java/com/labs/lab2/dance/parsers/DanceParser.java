@@ -46,14 +46,14 @@ public abstract class DanceParser {
      * @param filePath - path to XML file
      * @return true if success, else false
      */
-    public abstract boolean writeDancesToXmlFile(Dances dances, String filePath);
+    public abstract boolean writeDancesToXMLFile(Dances dances, String filePath);
 
     /**
      * Reads dance numbers from XML file
      * @param filePath - path to XML file
      * @return dances if file is correct, else null
      */
-    public abstract Dances readDancesFromXmlFile(String filePath);
+    public abstract Dances readDancesFromXMLFile(String filePath);
 
     /**
      * Converts XML file to multi-line

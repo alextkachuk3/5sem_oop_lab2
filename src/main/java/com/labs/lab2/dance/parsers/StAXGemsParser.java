@@ -17,6 +17,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Dance XML file StAX Parser
+ * @author Alex
+ */
 public class StAXGemsParser extends DanceParser {
 
     private final XMLInputFactory inputFactory;
@@ -38,7 +42,7 @@ public class StAXGemsParser extends DanceParser {
      * @return true if success, else false
      */
     @Override
-    public boolean writeDancesToXmlFile(Dances dances, String filePath) {
+    public boolean writeDancesToXMLFile(Dances dances, String filePath) {
         if(dances == null) return false;
         XMLOutputFactory xmlOutputFactory = XMLOutputFactory.newInstance();
         XMLStreamWriter xmlStreamWriter = null;
@@ -129,7 +133,7 @@ public class StAXGemsParser extends DanceParser {
      * @return dances if file is correct, else null
      */
     @Override
-    public Dances readDancesFromXmlFile(String filePath) {
+    public Dances readDancesFromXMLFile(String filePath) {
         try {
             danceValidator.validate(filePath);
             if(danceHandler.getErrors().size() == 0)

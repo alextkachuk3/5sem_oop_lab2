@@ -11,8 +11,8 @@ public enum DanceXmlTags {
     NAME("name"),
     AGE("age"),
     ORIGIN("origin"),
-    DANCERS("dancers"),
-    NUMBER("number");
+    NUMBER("number"),
+    DANCERS("dancers");
 
     private final String value;
 

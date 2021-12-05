@@ -33,7 +33,7 @@ public class DOMDanceParser extends DanceParser {
     }
 
     @Override
-    public boolean writeDancesToXmlFile(Dances _dances, String filePath){
+    public boolean writeDancesToXMLFile(Dances _dances, String filePath){
         if(_dances == null) return false;
         Document document = docBuilder.newDocument();
         Element rootElement = document.createElement(DanceXmlTags.DANCE.getValue());
@@ -101,7 +101,7 @@ public class DOMDanceParser extends DanceParser {
     }
 
     @Override
-    public Dances readDancesFromXmlFile(String filePath){
+    public Dances readDancesFromXMLFile(String filePath){
         try {
             danceValidator.validate(filePath);
             if(danceHandler.getErrors().size() == 0){

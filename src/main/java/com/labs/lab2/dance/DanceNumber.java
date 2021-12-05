@@ -17,7 +17,9 @@ public class DanceNumber implements Comparable<DanceNumber> {
     /**
      * Default DanceNumber constructor
      */
-    public DanceNumber() {}
+    public DanceNumber() {
+        dancers = new Dancers();
+    }
 
     /**
      * Parametrized DanceNumber constructor
