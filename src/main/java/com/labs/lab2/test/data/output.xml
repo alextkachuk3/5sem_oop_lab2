@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Dance>
+    <danceNumber id="dance65035">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Nxzdesrw</name>
+            <age>17</age>
+            <origin>Sslp</origin>
+        </dancers>
+        <number>4</number>
+    </danceNumber>
+    <danceNumber id="dance66724">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Dgnfpseg</name>
+            <age>16</age>
+            <origin>Jdghyh</origin>
+        </dancers>
+        <number>11</number>
+    </danceNumber>
+    <danceNumber id="dance32936">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Vjdrxknxf</name>
+            <age>16</age>
+            <origin>Lpsx</origin>
+        </dancers>
+        <number>6</number>
+    </danceNumber>
+    <danceNumber id="dance47043">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Yilpj</name>
+            <age>8</age>
+            <origin>Rhza</origin>
+        </dancers>
+        <number>9</number>
+    </danceNumber>
+    <danceNumber id="dance25728">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Wioshu</name>
+            <age>18</age>
+            <origin>Shwadv</origin>
+        </dancers>
+        <number>8</number>
+    </danceNumber>
+    <danceNumber id="dance52283">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Exffht</name>
+            <age>25</age>
+            <origin>Vnyiyj</origin>
+        </dancers>
+        <number>18</number>
+    </danceNumber>
+    <danceNumber id="dance35906">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Sygperm</name>
+            <age>25</age>
+            <origin>Avqnj</origin>
+        </dancers>
+        <number>20</number>
+    </danceNumber>
+    <danceNumber id="dance93014">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Zluizmkxm</name>
+            <age>5</age>
+            <origin>Hwhob</origin>
+        </dancers>
+        <number>16</number>
+    </danceNumber>
+    <danceNumber id="dance97789">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Hnbkjgtvf</name>
+            <age>10</age>
+            <origin>Jbyg</origin>
+        </dancers>
+        <number>9</number>
+    </danceNumber>
+    <danceNumber id="dance70317">
+        <type>ballroom</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>Rnzinur</name>
+            <age>14</age>
+            <origin>Crrp</origin>
+        </dancers>
+        <number>6</number>
+    </danceNumber>
+</Dance>

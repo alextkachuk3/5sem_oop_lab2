@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
  * Dance XML file StAX Parser
  * @author Alex
  */
-public class StAXGemsParser extends DanceParser {
+public class StAXDanceParser extends DanceParser {
 
     private final XMLInputFactory inputFactory;
     /**
@@ -29,7 +29,7 @@ public class StAXGemsParser extends DanceParser {
      *
      * @param schemaPath - path to XSD schema for validating XML file
      */
-    public StAXGemsParser(String schemaPath) {
+    public StAXDanceParser(String schemaPath) {
         super(schemaPath);
         inputFactory = XMLInputFactory.newInstance();
     }

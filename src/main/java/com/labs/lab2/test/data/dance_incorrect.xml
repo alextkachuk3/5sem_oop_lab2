@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dance>
+    <danceNumber id="dance0">
+        <type>rock</type>
+        <scene>assemblyHall</scene>
+        <numberOfDancers>sol</numberOfDancers>
+        <music>Live</music>
+        <dancers>
+            <name>Q</name>
+            <age>8</age>
+            <origin>Ukraine</origin>
+        </dancers>
+        <number>12</number>
+    </danceNumber>
+    <danceNumber id="dance1">
+        <type>ballroom</type>
+        <scene>streetPlatform</scene>
+        <numberOfDancers>solo</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>W</name>
+            <age>19</age>
+            <origin>USA</origin>
+        </dancers>
+        <number>14</number>
+    </danceNumber>
+    <danceNumber id="dance2">
+        <type>oriental</type>
+        <scene>street</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Phonogram</music>
+        <dancers>
+            <name>E</name>
+            <age>5</age>
+            <origin>USA</origin>
+        </dancers>
+        <number>14</number>
+    </danceNumber>
+    <danceNumber id="dance3">
+        <type>ballroom</type>
+        <scene>asemblyHall</scene>
+        <numberOfDancers>massive</numberOfDancers>
+        <music>Live</music>
+        <dancers>
+            <name>R</name>
+            <age>7</age>
+            <origin>Canada</origin>
+        </dancers>
+        <number>4</number>
+    </danceNumber>
+</Dance>

@@ -102,4 +102,18 @@ public class DanceNumber implements Comparable<DanceNumber> {
     public int compareTo(DanceNumber o) {
         return id.compareTo(o.getId());
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DanceNumber danceNumber = (DanceNumber) o;
+        return type.equals(danceNumber.type) &&
+                scene.equals(danceNumber.scene) &&
+                numberOfDancers.equals(danceNumber.numberOfDancers) &&
+                music.equals(danceNumber.music) &&
+                dancers.equals(danceNumber.dancers) &&
+                number == danceNumber.number;
+
+    }
 }

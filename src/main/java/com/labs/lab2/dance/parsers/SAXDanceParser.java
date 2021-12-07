@@ -19,7 +19,7 @@ import java.util.List;
  * Dance XML file SAX Parser
  * @author Alex
  */
-public class SAXDanceParser extends StAXGemsParser {
+public class SAXDanceParser extends StAXDanceParser {
 
     /**
      * Dance parser constructor

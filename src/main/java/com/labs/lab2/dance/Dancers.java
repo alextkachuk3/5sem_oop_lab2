@@ -9,6 +9,14 @@ public class Dancers {
     private int age;
     private String origin;
 
+    public Dancers(String _name, int _age, String _origin) {
+        name = _name;
+        age = _age;
+        origin = _origin;
+    }
+
+    public Dancers() {}
+
     public String getName() {
         return name;
     }
@@ -40,5 +48,16 @@ public class Dancers {
                 ", age=" + age +
                 ", origin='" + origin + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Dancers dancers = (Dancers) o;
+        return name.equals(dancers.name) &&
+                age == dancers.age &&
+                origin.equals(dancers.origin);
+
     }
 }
