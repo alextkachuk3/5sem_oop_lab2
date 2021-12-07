@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Dance xsi:noNamespaceSchemaLocation="Dance.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Dance>
     <danceNumber id="dance0">
         <type>folk</type>
         <scene>assemblyHall</scene>
