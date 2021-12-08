@@ -1,0 +1,55 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Dance">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="danceNumber" type="danceNumber" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="danceNumber">
+        <xs:sequence>
+            <xs:element name="type" type="danceType"/>
+            <xs:element name="scene" type="sceneType"/>
+            <xs:element name="numberOfDancers" type="numberOfDancersType"/>
+            <xs:element name="music" type="musicType"/>
+            <xs:element name="dancers" type="dancersType"/>
+            <xs:element name="number" type="xs:positiveInteger"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+    <xs:simpleType name="danceType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ballroom"/>
+            <xs:enumeration value="folk"/>
+            <xs:enumeration value="variety"/>
+            <xs:enumeration value="oriental"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="sceneType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="assemblyHall"/>
+            <xs:enumeration value="streetPlatform"/>
+            <xs:enumeration value="TVStudio"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="numberOfDancersType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="massive"/>
+            <xs:enumeration value="solo"/>
+            <xs:enumeration value="pair"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="musicType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Phonogram"/>
+            <xs:enumeration value="Live"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="dancersType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="age" type="xs:positiveInteger"/>
+            <xs:element name="origin" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

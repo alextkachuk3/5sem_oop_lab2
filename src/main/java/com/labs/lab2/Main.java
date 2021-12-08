@@ -1,9 +1,9 @@
 package com.labs.lab2;
 
 import com.labs.lab2.dance.Dances;
-import com.labs.lab2.dance.parsers.DOMDanceParser;
-import com.labs.lab2.dance.parsers.SAXDanceParser;
-import com.labs.lab2.dance.parsers.StAXDanceParser;
+import com.labs.lab2.dance.xml.parsers.DOMDanceParser;
+import com.labs.lab2.dance.xml.parsers.SAXDanceParser;
+import com.labs.lab2.dance.xml.parsers.StAXDanceParser;
 
 /**
  * @author  Alex
