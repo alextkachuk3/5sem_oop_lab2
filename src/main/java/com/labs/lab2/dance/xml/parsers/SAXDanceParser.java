@@ -1,4 +1,4 @@
-package com.labs.lab2.dance.parsers;
+package com.labs.lab2.dance.xml.parsers;
 
 import com.labs.lab2.dance.DanceNumber;
 import com.labs.lab2.dance.DanceXmlTags;

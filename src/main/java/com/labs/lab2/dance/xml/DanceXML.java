@@ -1,6 +1,5 @@
-package com.labs.lab2.dance.parsers;
+package com.labs.lab2.dance.xml;
 
-import com.labs.lab2.dance.Dances;
 import com.labs.lab2.dance.DanceHandler;
 import com.labs.lab2.dance.DanceValidator;
 import org.xml.sax.SAXException;
@@ -12,18 +11,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Dance parser abstract class
- */
-public abstract class DanceParser {
+public abstract class DanceXML {
     protected DanceValidator danceValidator;
     protected DanceHandler danceHandler;
 
-    /**
-     * Dance parser constructor
-     * @param schemaPath - path to XSD schema for validating XML file
-     */
-    public DanceParser(String schemaPath) {
+    public DanceXML(String schemaPath) {
         this.danceHandler = new DanceHandler();
         try {
             this.danceValidator = new DanceValidator(schemaPath, danceHandler);
@@ -39,21 +31,6 @@ public abstract class DanceParser {
     public List<String> getErrors() {
         return danceHandler.getErrors();
     }
-
-    /**
-     * Writes dance numbers to XML file
-     * @param dances - dances for write
-     * @param filePath - path to XML file
-     * @return true if success, else false
-     */
-    public abstract boolean writeDancesToXMLFile(Dances dances, String filePath);
-
-    /**
-     * Reads dance numbers from XML file
-     * @param filePath - path to XML file
-     * @return dances if file is correct, else null
-     */
-    public abstract Dances readDancesFromXMLFile(String filePath);
 
     /**
      * Converts XML file to multi-line
