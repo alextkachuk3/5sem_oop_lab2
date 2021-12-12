@@ -3,7 +3,6 @@ package com.labs.lab2.dance;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Dance XML objects class
@@ -22,21 +21,8 @@ public class Dances {
         return dances;
     }
 
-    public void setDances(List<DanceNumber> _dances) {
-        dances = _dances;
-    }
-
     public boolean add(DanceNumber danceNumber) {
         return dances.add(danceNumber);
-    }
-
-    public boolean remove(String id) {
-        return dances.removeIf(dance -> Objects.equals(dance.getId(), id));
-    }
-
-    @Override
-    public String toString() {
-        return "Dance=" + dances;
     }
 
     public void sort() {

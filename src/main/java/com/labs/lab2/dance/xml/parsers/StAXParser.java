@@ -15,6 +15,11 @@ import java.util.*;
 
 public class StAXParser extends Parser{
 
+    /**
+     * Reads dance numbers from XML file
+     * @param xml - XML file
+     * @return dance numbers from file
+     */
     public Dances parse(File xml) throws FileNotFoundException, XMLStreamException {
         XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
         XMLEventReader reader = xmlInputFactory.createXMLEventReader(new FileInputStream(xml));

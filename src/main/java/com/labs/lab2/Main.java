@@ -26,7 +26,6 @@ public class Main {
         StAXParser staxParser = new StAXParser();
         Dances dances2 = staxParser.parse(file);
 
-
         System.out.println("Hello, World!");
     }
 }

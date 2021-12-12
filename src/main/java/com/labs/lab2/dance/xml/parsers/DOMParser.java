@@ -12,7 +12,12 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DOMParser extends Parser{
+public class DOMParser extends Parser {
+    /**
+     * Reads dance numbers from XML file
+     * @param xml - XML file
+     * @return dance numbers from file
+     */
     public Dances parse(File xml) {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
@@ -33,7 +38,7 @@ public class DOMParser extends Parser{
         return null;
     }
 
-    private void parseNodes(Node node, DanceHandler candyHandler) {
+    private void parseNodes(Node node, DanceHandler danceHandler) {
         if (node.getNodeType() == Node.ELEMENT_NODE) {
             Map<String, String> attributes = new HashMap<>();
             if (node.getAttributes() != null) {
@@ -42,10 +47,10 @@ public class DOMParser extends Parser{
                             node.getAttributes().item(i).getTextContent());
                 }
             }
-            candyHandler.setField(node.getNodeName(), node.getTextContent(), attributes);
+            danceHandler.setField(node.getNodeName(), node.getTextContent(), attributes);
             if (node.getChildNodes() != null) {
                 for (int i = 0; i < node.getChildNodes().getLength(); i++) {
-                    parseNodes(node.getChildNodes().item(i), candyHandler);
+                    parseNodes(node.getChildNodes().item(i), danceHandler);
                 }
             }
         }

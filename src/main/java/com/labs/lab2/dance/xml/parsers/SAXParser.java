@@ -7,9 +7,13 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 public class SAXParser extends Parser {
+    /**
+     * Reads dance numbers from XML file
+     * @param xml - XML file
+     * @return dance numbers from file
+     */
     public Dances parse(File xml) throws ParserConfigurationException, SAXException, IOException {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         javax.xml.parsers.SAXParser saxParser = factory.newSAXParser();
